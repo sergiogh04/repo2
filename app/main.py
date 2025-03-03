@@ -33,6 +33,8 @@ def read_user(user_id: int, db: Session = Depends(get_db)):
         raise HTTPException(status_code=404, detail="User not found")
     return db_user
 
+    
+
 @app.get("/users/", response_model=list[schemas.User])
 def get_all_users(db: Session = Depends(get_db)):
     return crud.get_all_users(db)
