@@ -6,6 +6,7 @@ from app import models, schemas, crud
 # ✅ Crear las tablas si no existen al iniciar la aplicación
 Base.metadata.create_all(bind=engine)
 
+
 app = FastAPI()
 
 # Dependencia para obtener la sesión de la base de datos
