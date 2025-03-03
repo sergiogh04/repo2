@@ -9,7 +9,7 @@ on:
     branches: [ main ]
     paths:
       - app/**
-
+# HOLA
 env:
   IMAGE_NAME: fastapiserver
   IMAGE_TAG: latest
